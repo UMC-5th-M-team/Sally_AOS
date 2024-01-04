@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="393dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/hack1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_top_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/search_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_back_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="88dp"
+        android:layout_marginLeft="36dp"/>
+
+    <ImageView
+        android:id="@+id/search_input_box_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_input"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="77dp"
+        android:layout_marginLeft="65dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="읽고 싶은 책 검색"
+        app:layout_constraintTop_toTopOf="@id/search_input_box_iv"
+        app:layout_constraintStart_toStartOf="@id/search_input_box_iv"
+        android:background="@null"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_esc"
+        app:layout_constraintTop_toTopOf="@id/search_input_box_iv"
+        app:layout_constraintEnd_toEndOf="@id/search_input_box_iv"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_button2"
+        app:layout_constraintStart_toEndOf="@id/search_input_box_iv"
+        app:layout_constraintTop_toTopOf="@id/search_input_box_iv"
+        android:layout_marginLeft="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="검색결과 없음..."
+        android:textColor="#787878"
+        android:textSize="13sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="174dp"
+        android:layout_marginLeft="43dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_shelf"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="319dp"
+        android:layout_marginLeft="39dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_shelf"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="464dp" />
+
+    <ImageView
+        android:id="@+id/clearbook1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_clearbook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="213dp"
+        android:layout_marginLeft="48dp" />
+
+    <ImageView
+        android:id="@+id/clearbook1_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_plus"
+        app:layout_constraintTop_toTopOf="@id/clearbook1"
+        app:layout_constraintStart_toStartOf="@id/clearbook1"
+        app:layout_constraintEnd_toEndOf="@id/clearbook1"
+        android:layout_marginTop="49dp" />
+
+    <TextView
+        android:id="@+id/clearbook1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(직접 추가)"
+        android:textColor="#C9ADA7"
+        android:textSize="9sp"
+        app:layout_constraintTop_toTopOf="@id/clearbook1"
+        app:layout_constraintStart_toStartOf="@id/clearbook1"
+        app:layout_constraintEnd_toEndOf="@id/clearbook1"
+        android:layout_marginTop="75dp" />
+
+
+    <ImageView
+        android:id="@+id/clearbook2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_clearbook"
+        app:layout_constraintStart_toEndOf="@id/clearbook1"
+        app:layout_constraintTop_toTopOf="@id/clearbook1"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/clearbook2_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_plus"
+        app:layout_constraintTop_toTopOf="@id/clearbook2"
+        app:layout_constraintStart_toStartOf="@id/clearbook2"
+        app:layout_constraintEnd_toEndOf="@id/clearbook2"
+        android:layout_marginTop="49dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/clearbook2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(직접 추가)"
+        android:textColor="#C9ADA7"
+        android:textSize="9sp"
+        app:layout_constraintTop_toTopOf="@id/clearbook2"
+        app:layout_constraintStart_toStartOf="@id/clearbook2"
+        app:layout_constraintEnd_toEndOf="@id/clearbook2"
+        android:layout_marginTop="75dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/clearbook3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_clearbook"
+        app:layout_constraintStart_toEndOf="@id/clearbook2"
+        app:layout_constraintTop_toTopOf="@id/clearbook2"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/clearbook3_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_plus"
+        app:layout_constraintTop_toTopOf="@id/clearbook3"
+        app:layout_constraintStart_toStartOf="@id/clearbook3"
+        app:layout_constraintEnd_toEndOf="@id/clearbook3"
+        android:layout_marginTop="49dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/clearbook3_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(직접 추가)"
+        android:textColor="#C9ADA7"
+        android:textSize="9sp"
+        app:layout_constraintTop_toTopOf="@id/clearbook3"
+        app:layout_constraintStart_toStartOf="@id/clearbook3"
+        app:layout_constraintEnd_toEndOf="@id/clearbook3"
+        android:layout_marginTop="75dp"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/clearbook4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_clearbook"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="358dp"
+        android:layout_marginLeft="48dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/clearbook4_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_plus"
+        app:layout_constraintTop_toTopOf="@id/clearbook4"
+        app:layout_constraintStart_toStartOf="@id/clearbook4"
+        app:layout_constraintEnd_toEndOf="@id/clearbook4"
+        android:layout_marginTop="49dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/clearbook4_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(직접 추가)"
+        android:textColor="#C9ADA7"
+        android:textSize="9sp"
+        app:layout_constraintTop_toTopOf="@id/clearbook4"
+        app:layout_constraintStart_toStartOf="@id/clearbook4"
+        app:layout_constraintEnd_toEndOf="@id/clearbook4"
+        android:layout_marginTop="75dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/clearbook5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_clearbook"
+        app:layout_constraintStart_toEndOf="@id/clearbook4"
+        app:layout_constraintTop_toTopOf="@id/clearbook4"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/clearbook5_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_plus"
+        app:layout_constraintTop_toTopOf="@id/clearbook5"
+        app:layout_constraintStart_toStartOf="@id/clearbook5"
+        app:layout_constraintEnd_toEndOf="@id/clearbook5"
+        android:layout_marginTop="49dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/clearbook5_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(직접 추가)"
+        android:textColor="#C9ADA7"
+        android:textSize="9sp"
+        app:layout_constraintTop_toTopOf="@id/clearbook5"
+        app:layout_constraintStart_toStartOf="@id/clearbook5"
+        app:layout_constraintEnd_toEndOf="@id/clearbook5"
+        android:layout_marginTop="75dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/clearbook6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_clearbook"
+        app:layout_constraintStart_toEndOf="@id/clearbook5"
+        app:layout_constraintTop_toTopOf="@id/clearbook5"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/clearbook6_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_plus"
+        app:layout_constraintTop_toTopOf="@id/clearbook6"
+        app:layout_constraintStart_toStartOf="@id/clearbook6"
+        app:layout_constraintEnd_toEndOf="@id/clearbook6"
+        android:layout_marginTop="49dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/clearbook6_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(직접 추가)"
+        android:textColor="#C9ADA7"
+        android:textSize="9sp"
+        app:layout_constraintTop_toTopOf="@id/clearbook6"
+        app:layout_constraintStart_toStartOf="@id/clearbook6"
+        app:layout_constraintEnd_toEndOf="@id/clearbook6"
+        android:layout_marginTop="75dp"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

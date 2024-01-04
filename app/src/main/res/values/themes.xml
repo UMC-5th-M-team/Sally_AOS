@@ -3,6 +3,27 @@
     <style name="Base.Theme.Sally" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    </style>
+
+    <!-- Bottom Navigation Label Text Size 지정 -->
+    <style name="BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/TextAppearance.BottomNavigationView.Active</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.BottomNavigationView.Inactive</item>
+    </style>
+
+    <!-- blank styles for better code readability-->
+    <style name="TextAppearance"/>
+    <style name="TextAppearance.BottomNavigationView"/>
+
+    <!-- inactive tab text style -->
+    <style name="TextAppearance.BottomNavigationView.Inactive">
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <!-- active tab text style -->
+    <style name="TextAppearance.BottomNavigationView.Active">
+        <item name="android:textSize">8sp</item>
     </style>
 
     <style name="Theme.Sally" parent="Base.Theme.Sally" />

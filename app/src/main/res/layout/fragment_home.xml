@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="393dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:background="@color/hack1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/top_background_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/top_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/hello_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="84dp"
+                android:text="환영합니다!!"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/hello2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="월간 목표를 세우고 독서률을 확인하세요!!"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@id/hello_tv"
+                app:layout_constraintTop_toBottomOf="@id/hello_tv" />
+
+            <ImageView
+                android:id="@+id/input_background_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/home_input"
+                app:layout_constraintStart_toStartOf="@id/hello_tv"
+                app:layout_constraintTop_toBottomOf="@id/hello2_tv" />
+
+            <EditText
+                android:id="@+id/input_background_et"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:background="@null"
+                android:hint="읽고있는 책 검색"
+                app:layout_constraintStart_toStartOf="@id/input_background_iv"
+                app:layout_constraintTop_toTopOf="@id/input_background_iv" />
+
+            <ImageView
+                android:id="@+id/search_button_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:src="@drawable/search_button"
+                app:layout_constraintStart_toEndOf="@id/input_background_iv"
+                app:layout_constraintTop_toTopOf="@id/input_background_iv" />
+
+            <ImageView
+                android:id="@+id/home_textbox_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/home_textbox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/search_button_iv" />
+
+            <TextView
+                android:id="@+id/home_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="24dp"
+                android:text="직접 추가하고 싶은 책\n의 표지와 제목을 업로\n드해 보세요!!"
+                android:textColor="#BABABA"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/home_textbox_iv"
+                app:layout_constraintTop_toTopOf="@id/home_textbox_iv" />
+
+            <ImageView
+                android:id="@+id/plus1_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/plus"
+                app:layout_constraintBottom_toBottomOf="@id/home_textbox_iv"
+                app:layout_constraintEnd_toEndOf="@id/home_textbox_iv" />
+
+            <ImageView
+                android:id="@+id/plus2_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="32dp"
+                android:src="@drawable/plus2"
+                app:layout_constraintBottom_toBottomOf="@id/home_textbox_iv"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/plus3_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="55dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/plus3"
+                app:layout_constraintBottom_toBottomOf="@id/home_textbox_iv"
+                app:layout_constraintEnd_toEndOf="@id/home_textbox_iv" />
+
+            <ImageView
+                android:id="@+id/home_recommend_box_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/book_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/home_textbox_iv" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/dog"
+                app:layout_constraintStart_toStartOf="@id/home_recommend_box_iv"
+                app:layout_constraintTop_toTopOf="@id/home_recommend_box_iv" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="나민혁"
+                android:textColor="#4A4A4A"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@id/profile"
+                app:layout_constraintTop_toTopOf="@id/profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="화이트"
+                android:textColor="#8E8E8E"
+                android:textSize="5sp"
+                app:layout_constraintStart_toStartOf="@id/name"
+                app:layout_constraintTop_toBottomOf="@id/name" />
+
+            <ImageView
+                android:id="@+id/setting_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/dot"
+                app:layout_constraintEnd_toEndOf="@id/home_recommend_box_iv"
+                app:layout_constraintTop_toTopOf="@id/home_recommend_box_iv" />
+
+            <ImageView
+                android:id="@+id/recommend_textbox_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/recommend_box"
+                app:layout_constraintStart_toStartOf="@id/profile"
+                app:layout_constraintTop_toBottomOf="@id/profile" />
+
+            <TextView
+                android:id="@+id/recommend_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="9dp"
+                android:text="회원님을 위한 ai추천"
+                android:textColor="#5C5C5C"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="@id/recommend_textbox_iv"
+                app:layout_constraintTop_toTopOf="@id/recommend_textbox_iv" />
+
+            <ImageView
+                android:id="@+id/recommend_book_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/rocommend_book"
+                app:layout_constraintStart_toStartOf="@id/recommend_textbox_iv"
+                app:layout_constraintTop_toBottomOf="@id/recommend_text_tv" />
+
+            <TextView
+                android:id="@+id/book_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="역행자(예시)"
+                android:textColor="#4C4C4C"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@id/recommend_book_iv"
+                app:layout_constraintTop_toTopOf="@id/recommend_book_iv" />
+
+            <TextView
+                android:id="@+id/book_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="지은이(예시)"
+                android:textColor="#7B7B7B"
+                android:textSize="5sp"
+                app:layout_constraintStart_toStartOf="@id/book_profile"
+                app:layout_constraintTop_toBottomOf="@id/book_profile" />
+
+            <TextView
+                android:id="@+id/book_read_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="읽어보러 가기"
+                android:textColor="#888888"
+                android:textSize="5sp"
+                app:layout_constraintBottom_toBottomOf="@id/recommend_book_iv"
+                app:layout_constraintStart_toStartOf="@id/book_author" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/book_button"
+                app:layout_constraintBottom_toBottomOf="@id/book_read_tv"
+                app:layout_constraintStart_toEndOf="@id/book_read_tv"
+                app:layout_constraintTop_toTopOf="@id/book_read_tv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:layout_marginRight="18dp"
+                android:text="한줄평 예시입니다."
+                android:textColor="#4C4C4C"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@id/recommend_textbox_iv"
+                app:layout_constraintTop_toTopOf="@id/recommend_textbox_iv" />
+
+            <ImageView
+                android:id="@+id/reading_background_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="3dp"
+                android:src="@drawable/reading_background"
+                app:layout_constraintStart_toStartOf="@id/home_recommend_box_iv"
+                app:layout_constraintTop_toBottomOf="@id/home_recommend_box_iv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="13dp"
+                android:text="현재 0권의 책을 읽는 중입니다."
+                android:textColor="#888888"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/reading_background_iv"
+                app:layout_constraintTop_toTopOf="@id/reading_background_iv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="37dp"
+                android:text="모두 보기"
+                android:textColor="#C4C4C4"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="@id/reading_background_iv"
+                app:layout_constraintTop_toTopOf="@id/reading_background_iv" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/next_button"
+                app:layout_constraintStart_toStartOf="@id/reading_background_iv"
+                app:layout_constraintTop_toTopOf="@id/reading_background_iv" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="49dp"
+                android:src="@drawable/readingbook1"
+                app:layout_constraintBottom_toBottomOf="@id/reading_background_iv"
+                app:layout_constraintEnd_toEndOf="@id/reading_background_iv"
+                app:layout_constraintTop_toTopOf="@id/reading_background_iv" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/readingbook2"
+                app:layout_constraintBottom_toBottomOf="@id/reading_background_iv"
+                app:layout_constraintEnd_toEndOf="@id/reading_background_iv"
+                app:layout_constraintTop_toTopOf="@id/reading_background_iv" />
+
+            <TextView
+                android:id="@+id/want_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="읽고 싶은 책"
+                app:layout_constraintTop_toBottomOf="@id/reading_background_iv"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="33dp"
+                android:textSize="15sp"
+                android:textColor="#888888"/>
+
+            <ImageView
+                android:id="@+id/want_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/want_title"
+                app:layout_constraintTop_toTopOf="@id/want_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="27dp"/>
+
+            <ImageView
+                android:id="@+id/add_book_background_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_book_background"
+                app:layout_constraintTop_toBottomOf="@id/want_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="40dp"/>
+
+            <ImageView
+                android:id="@+id/add_book_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_book"
+                app:layout_constraintTop_toBottomOf="@id/want_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="19dp" />
+
+            <ImageView
+                android:id="@+id/add_book_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_book"
+                app:layout_constraintTop_toBottomOf="@id/want_tv"
+                app:layout_constraintStart_toEndOf="@id/add_book_button1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="19dp" />
+
+            <ImageView
+                android:id="@+id/add_book_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_book"
+                app:layout_constraintTop_toBottomOf="@id/want_tv"
+                app:layout_constraintStart_toEndOf="@id/add_book_button2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="19dp" />
+
+            <ImageView
+                android:id="@+id/add_book_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_book"
+                app:layout_constraintTop_toBottomOf="@id/want_tv"
+                app:layout_constraintStart_toEndOf="@id/add_book_button3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="19dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="더 보기"
+                app:layout_constraintTop_toTopOf="@id/want_title_tv"
+                app:layout_constraintBottom_toBottomOf="@id/want_title_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="43dp"
+                android:textColor="#888888"
+                android:textSize="8sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/want_back_button"
+                app:layout_constraintTop_toTopOf="@id/want_title_tv"
+                app:layout_constraintBottom_toBottomOf="@id/want_title_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="29dp" />
+
+            <TextView
+                android:id="@+id/clear_book_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="완독한 책"
+                app:layout_constraintTop_toBottomOf="@id/add_book_background_iv"
+                app:layout_constraintStart_toStartOf="@id/want_tv"
+                android:textColor="#888888"
+                android:textSize="15sp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:id="@+id/clear_book_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/want_title"
+                app:layout_constraintTop_toTopOf="@id/clear_book_tv"
+                app:layout_constraintStart_toStartOf="@id/want_title_tv"
+                android:layout_marginTop="14dp"/>
+
+            <ImageView
+                android:id="@+id/cal_background_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cal_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clear_book_iv"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"/>
+
+            <ImageView
+                android:id="@+id/cal_left_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cal_left_btn"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="22dp"/>
+
+            <TextView
+                android:id="@+id/cal_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3월"
+                android:textColor="#4A4E69"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                app:layout_constraintEnd_toEndOf="@id/cal_background_iv"
+                android:layout_marginTop="4dp" />
+
+            <ImageView
+                android:id="@+id/cal_right_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cal_right_btn"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintEnd_toEndOf="@id/cal_background_iv"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cal_week_bar"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                android:layout_marginTop="31dp"
+                android:layout_marginLeft="19dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cal_week1"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="39dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cal_week1_back"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                android:layout_marginTop="115dp"
+                android:layout_marginLeft="31dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/book3"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="32dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/book4"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="150dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/book5"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="242dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cal_week2"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                android:layout_marginTop="141dp"
+                android:layout_marginLeft="38dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cal_week2_back"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                android:layout_marginTop="196dp"
+                android:layout_marginLeft="31dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/book6"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                android:layout_marginTop="160dp"
+                android:layout_marginLeft="117dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/book7"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                android:layout_marginTop="160dp"
+                android:layout_marginLeft="242dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/book8"
+                app:layout_constraintTop_toTopOf="@id/cal_background_iv"
+                app:layout_constraintStart_toStartOf="@id/cal_background_iv"
+                android:layout_marginTop="160dp"
+                android:layout_marginLeft="287dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

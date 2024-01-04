@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu_home">
+
+    <!-- 메인 홈 -->
+    <fragment
+        android:id="@+id/menu_home"
+        android:name="com.umc.sally.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <!-- 서재 -->
+    <fragment
+        android:id="@+id/menu_shelf"
+        android:name="com.umc.sally.ShelfFragment"
+        android:label="fragment_shelf"
+        tools:layout="@layout/fragment_shelf" >
+    </fragment>
+
+    <!-- 마이 페이지 -->
+    <fragment
+        android:id="@+id/menu_mypage"
+        android:name="com.umc.sally.MypageFragment"
+        android:label="fragment_mypage"
+        tools:layout="@layout/fragment_mypage" >
+    </fragment>
+
+</navigation>

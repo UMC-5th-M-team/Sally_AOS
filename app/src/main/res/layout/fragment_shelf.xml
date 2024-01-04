@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShelfFragment"
+    android:background="@color/main_color"
+    android:id="@+id/shelf_all">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="388dp"
+        android:src="@drawable/shape_select_shelf_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <RelativeLayout
+        android:id="@+id/relative_title_shelf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginVertical="14dp">
+
+        <ImageView
+            android:id="@+id/img_back_shelf"
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_back_arrow"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/text_title_shelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_back_shelf"
+            android:text="서재"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/btn_shelf_add"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="27.45dp"
+            android:src="@drawable/ic_add"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/relative_title_shelf"
+        android:layout_marginBottom="15dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_search_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_7round"
+            android:paddingVertical="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:layout_toLeftOf="@id/btn_search_submit">
+
+            <EditText
+                android:id="@+id/edit_search"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:hint="검색어를 입력하세요."
+                android:textSize="16dp"
+                android:textColor="#6A6A6A"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"/>
+            
+            <ImageButton
+                android:id="@+id/btn_search_close"
+                android:layout_width="15.5dp"
+                android:layout_height="15.5dp"
+                android:src="@drawable/ic_close_btn"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"/>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_search_submit"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_search_btn"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/linear_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear_search">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="최신 서적"
+            android:textSize="20dp"
+            android:textColor="@color/main_color"
+            android:textStyle="bold"
+            android:paddingVertical="10dp"
+            android:background="@drawable/shape_shelf_tab_select_bg"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="좋아요 표시"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingVertical="10dp"
+            android:background="@drawable/shape_shelf_tab_unselect_bg"
+            android:gravity="center"/>
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_book_shelf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_tab">
+
+        <ImageView
+            android:id="@+id/img_shelf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:src="@drawable/img_shelf"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:id="@+id/img_book"
+            android:layout_width="77dp"
+            android:layout_height="109dp"
+            android:src="@drawable/img_sample_book"
+            android:layout_marginTop="54dp"
+            android:layout_marginLeft="54dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_select_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_tab"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/relative_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="22dp">
+
+            <TextView
+                android:id="@+id/text_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2024년 1월"
+                android:textColor="@color/white"
+                android:textSize="10dp"/>
+            
+            <ImageView
+                android:id="@+id/img_down"
+                android:layout_width="9dp"
+                android:layout_height="4dp"
+                android:src="@drawable/ic_down_arrow"
+                android:layout_toRightOf="@id/text_month"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2권의 책을 읽고 있어요"
+                android:textColor="@color/white"
+                android:textSize="7dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/text_month"/>
+
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/img_select_book"
+            android:layout_width="128.8dp"
+            android:layout_height="184dp"
+            android:src="@drawable/img_sample_book"
+            android:layout_marginTop="19dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/relative_month"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
