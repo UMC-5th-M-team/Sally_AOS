@@ -4,191 +4,141 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ShelfFragment"
-    android:background="@color/background">
+    android:background="@color/main_color">
 
-    <!-- 책 이미지 -->
     <RelativeLayout
-        android:id="@+id/linear_book_images"
+        android:id="@+id/relative_title_shelf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
-        
-        <ImageView
-            android:id="@+id/img_book_ramp"
-            android:layout_width="wrap_content"
-            android:layout_height="219dp"
-            android:src="@drawable/img_ramp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"/>
+        android:layout_marginLeft="31dp"
+        android:layout_marginVertical="14dp">
 
         <ImageView
-            android:id="@+id/img_book_cover"
-            android:layout_width="wrap_content"
-            android:layout_height="247dp"
-            android:src="@drawable/img_sample_book"
-            android:layout_marginTop="93dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"/>
-
-    </RelativeLayout>
-
-    <!-- 책 정보 -->
-    <RelativeLayout
-        android:id="@+id/relative_book_info_all"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="22dp"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@id/linear_book_images">
-
-    
-        <RelativeLayout
-            android:id="@+id/relative_book_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/shape_book_info_background">
-    
-            <ImageView
-                android:id="@+id/img_book_info_icon"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/ic_book_info" />
-    
-            <LinearLayout
-                android:id="@+id/linear_book_info_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/img_book_info_icon"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
-    
-                <LinearLayout
-                    android:id="@+id/linear_book_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-    
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/shape_book_info_label"
-                        android:paddingHorizontal="9dp"
-                        android:paddingVertical="3dp"
-                        android:text="책 제목"
-                        android:textColor="@color/white"
-                        android:textSize="13dp"
-                        android:textStyle="bold" />
-    
-                    <TextView
-                        android:id="@+id/text_book_title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="7dp"
-                        android:text="OOO"
-                        android:textColor="@color/white"
-                        android:textSize="13dp" />
-    
-                </LinearLayout>
-    
-                <LinearLayout
-                    android:id="@+id/linear_book_writer"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-    
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/shape_book_info_label"
-                        android:paddingHorizontal="9dp"
-                        android:paddingVertical="3dp"
-                        android:text="저자"
-                        android:textColor="@color/white"
-                        android:textSize="13dp"
-                        android:textStyle="bold" />
-    
-                    <TextView
-                        android:id="@+id/text_book_writer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="7dp"
-                        android:text="OOO"
-                        android:textColor="@color/white"
-                        android:textSize="13dp" />
-    
-                </LinearLayout>
-    
-                <LinearLayout
-                    android:id="@+id/linear_book_publisher"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="16dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-    
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/shape_book_info_label"
-                        android:paddingHorizontal="9dp"
-                        android:paddingVertical="3dp"
-                        android:text="출판사"
-                        android:textColor="@color/white"
-                        android:textSize="13dp"
-                        android:textStyle="bold" />
-    
-                    <TextView
-                        android:id="@+id/text_book_publisher"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="7dp"
-                        android:text="OOO"
-                        android:textColor="@color/white"
-                        android:textSize="13dp" />
-    
-                </LinearLayout>
-    
-            </LinearLayout>
-    
-            <TextView
-                android:id="@+id/text_book_review"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/linear_book_info_text"
-                android:layout_marginLeft="11dp"
-                android:layout_marginRight="63dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/shape_book_review_background"
-                android:paddingHorizontal="15dp"
-                android:paddingVertical="8dp"
-                android:text="아직 기록이 없습니다."
-                android:textColor="@color/input_gray"
-                android:textSize="13dp" />
-    
-        </RelativeLayout>
-        
-        <ImageButton
-            android:id="@+id/btn_edit_review"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
+            android:id="@+id/img_back_shelf"
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_back_arrow"
             android:scaleType="fitXY"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/ic_edit_review_btn"
-            android:background="@android:color/transparent"/>
-        
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/text_title_shelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_back_shelf"
+            android:text="서재"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/btn_shelf_add"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="27.45dp"
+            android:src="@drawable/ic_add"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
     </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/relative_title_shelf"
+        android:layout_marginBottom="15dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_search_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_7round"
+            android:paddingVertical="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:layout_toLeftOf="@id/btn_search_submit">
+
+            <EditText
+                android:id="@+id/edit_search"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:hint="검색어를 입력하세요."
+                android:textSize="16dp"
+                android:textColor="#6A6A6A"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"/>
+            
+            <ImageButton
+                android:id="@+id/btn_search_close"
+                android:layout_width="15.5dp"
+                android:layout_height="15.5dp"
+                android:src="@drawable/ic_close_btn"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"/>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_search_submit"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_search_btn"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/linear_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear_search">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="최신 서적"
+            android:textSize="20dp"
+            android:textColor="@color/main_color"
+            android:textStyle="bold"
+            android:paddingVertical="10dp"
+            android:background="@drawable/shape_shelf_tab_select_bg"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="좋아요 표시"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingVertical="10dp"
+            android:background="@drawable/shape_shelf_tab_unselect_bg"
+            android:gravity="center"/>
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_shelf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_tab"
+        android:layout_marginVertical="8dp"
+        android:src="@drawable/img_shelf"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
