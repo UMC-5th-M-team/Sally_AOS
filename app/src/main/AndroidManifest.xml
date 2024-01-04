@@ -12,13 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sally"
         tools:targetApi="31">
+<<<<<<< HEAD
         <activity android:name=".MainActivity" android:exported="true">
 
+=======
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+>>>>>>> b3b5f55 ([ADD] start project)
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+<<<<<<< HEAD
 
         </activity>
         
@@ -31,6 +38,9 @@
 
         </activity>
 
+=======
+        </activity>
+>>>>>>> b3b5f55 ([ADD] start project)
     </application>
 
 </manifest>
