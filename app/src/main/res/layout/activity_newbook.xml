@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/hack1">
+
+    <EditText
+        android:id="@+id/title_et"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:hint="첵제목 입력"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/author_et"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:hint="저자 입력"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@id/title_et"
+        app:layout_constraintStart_toStartOf="@id/title_et"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/publisher_et"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:hint="출판사 입력"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@id/author_et"
+        app:layout_constraintStart_toStartOf="@id/author_et"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/image_URL"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:hint="이미지 URL 입력"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@id/publisher_et"
+        app:layout_constraintStart_toStartOf="@id/publisher_et"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전송"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
