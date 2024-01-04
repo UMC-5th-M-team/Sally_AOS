@@ -1,5 +1,6 @@
 package com.umc.sally
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -24,6 +25,8 @@ class ShelfFragment : Fragment() {
         return binding.root
     }
 
+
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -32,6 +35,18 @@ class ShelfFragment : Fragment() {
         mWindow.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         mWindow.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         mWindow.statusBarColor = ContextCompat.getColor(requireActivity(), R.color.main_color)
+
+        binding.imgBook.setOnClickListener(View.OnClickListener {
+            binding.relativeBookShelf.visibility = View.GONE
+            binding.relativeSelectBook.visibility = View.VISIBLE
+            binding.shelfAll.setBackgroundColor(Color.parseColor("#F2E9E4"));
+        })
+
+        binding.imgBackShelf.setOnClickListener(View.OnClickListener {
+            binding.relativeBookShelf.visibility = View.VISIBLE
+            binding.relativeSelectBook.visibility = View.GONE
+            binding.shelfAll.setBackgroundColor(Color.parseColor("#C9ADA7"));
+        })
     }
 
     override fun onDestroy() {
