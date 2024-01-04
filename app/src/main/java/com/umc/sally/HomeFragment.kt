@@ -1,5 +1,6 @@
 package com.umc.sally
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -18,6 +19,18 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentHomeBinding.inflate(layoutInflater)
+
+        val intent = Intent(requireContext(), SearchActivity::class.java)
+        val intent2 = Intent(requireContext(), NewBookActivity::class.java)
+
+        binding.inputBackgroundIv.setOnClickListener{startActivity(intent)}
+        binding.searchButtonIv.setOnClickListener { startActivity(intent) }
+
+        binding.homeTextboxIv.setOnClickListener { startActivity(intent2) }
+
+        binding.calLeftBtn.setOnClickListener {
+            val cal_month = binding.calMonth.toString()
+        }
 
         return binding.root
     }

@@ -51,6 +51,7 @@ dependencies {
 
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
 
     // Retrofit2, gson 의존성 추가
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
