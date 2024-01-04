@@ -6,4 +6,3 @@ import retrofit2.http.Query
 interface RetrofitInterface {
   
 }
-//
