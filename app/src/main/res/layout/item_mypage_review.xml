@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="9dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_contents_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="21dp"
+        android:background="@drawable/shape_mypage_review_background"
+        android:paddingVertical="15dp"
+        android:paddingLeft="20dp"
+        android:elevation="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="13dp">
+
+        <ImageView
+            android:id="@+id/img_book_cover"
+            android:layout_width="70dp"
+            android:layout_height="104dp"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            android:background="@drawable/shape_review_book_round"
+            android:src="@drawable/img_sample_book" />
+
+        <TextView
+            android:id="@+id/text_book_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="책 제목"
+            android:textSize="10dp"
+            android:textColor="#999999"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/img_book_cover"/>
+
+        <TextView
+            android:id="@+id/text_book_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저자"
+            android:textSize="8dp"
+            android:textColor="#C7C7C7"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/img_book_cover"
+            android:layout_below="@id/text_book_title"/>
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024년 01월 13일 18:20"
+            android:layout_below="@id/img_book_cover"
+            android:layout_marginTop="4dp"
+            android:textSize="8dp"
+            android:textColor="#C7C7C7"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/linear_review_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/text_date"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/text_review_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="리뷰 제목"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"/>
+            
+            <ImageButton
+                android:id="@+id/btn_search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_search_mypage"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_review_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="유니버스 에디션의 표지는 각도에 따라 다르게 보이는 렌티큘러 효과를 사용해 부의 피라미드로 향하는 역행자 세계관을 구현했다. 본문에는 자청이 『역행자』를 다시 읽으며 필기한 비하인드 스토리, 새로 추가된 정보들뿐 아니라 독자들에게 꼭 강조하고픈 문장에 그은 밑줄까지 그대로 옮겼다. 자청의 생생한 코멘터리를 그대로 옮긴 유니버스 에디션을 통해 독자들은 역행자 세계관에 한층 더 가까워질 수 있을 것이다."
+            android:layout_below="@id/linear_review_title"
+            android:layout_marginRight="45dp"
+            android:textColor="#6E6E6E"
+            android:textSize="8dp"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_review_content"
+            android:layout_marginTop="15dp">
+
+            <ImageButton
+                android:id="@+id/btn_edit_review"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_mypage_edit_review"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="10dp" />
+
+            <ImageButton
+                android:id="@+id/btn_cloud"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_mypage_cloud"
+                android:layout_toRightOf="@id/btn_edit_review"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/btn_trash"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_mypage_trash"
+                android:layout_toLeftOf="@id/btn_more"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/btn_more"
+                android:layout_width="4dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_mypage_more"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="22dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_review_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="90dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/text_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CD93D7"
+            android:text="내용 요약"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="20dp"/>
+
+        <TextView
+            android:id="@+id/text_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="p.120 ~ p.180"
+            android:textSize="8dp"
+            android:textColor="#C7C7C7"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/text_label"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
