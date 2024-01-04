@@ -2,12 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-<<<<<<< HEAD
-    <color name="hack1">#F2E9E4</color>
-    <color name="hack2">#C9ADA7</color>
-    <color name="hack3">#9B8B98</color>
-    <color name="hack4">#4A4E69</color>
-    <color name="hack5">#22223B</color>
-=======
->>>>>>> b3b5f55 ([ADD] start project)
+
+    <color name="background">#F2E9E4</color>
+    <color name="main_color">#C9ADA7</color>
+    <color name="bright_green">#67DC3E</color>
+    <color name="normal_gray">#4A4E69</color>
+    <color name="dark_gray">#22223B</color>
+    <color name="smoke_blue">#3A739E</color>
+    <color name="nav_gray">#A5A5A5</color>
+    <color name="input_gray">#818181</color>
+    <color name="shelf_gray">#D9D9D9</color>
 </resources>

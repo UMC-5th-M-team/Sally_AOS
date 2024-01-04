@@ -4,13 +4,16 @@
     <group>
         <item
             android:id="@+id/menu_home"
-            android:title="홈" />
+            android:title=""
+            android:icon="@drawable/selector_menu_home"/>
         <item
             android:id="@+id/menu_shelf"
-            android:title="서재" />
+            android:title=""
+            android:icon="@drawable/selector_menu_shelf"/>
         <item
             android:id="@+id/menu_mypage"
-            android:title="설정" />
+            android:title=""
+            android:icon="@drawable/selector_menu_mypage"/>
     </group>
 
 </menu>
