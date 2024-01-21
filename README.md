@@ -28,8 +28,8 @@
 | **Android** | 화이트/나민혁 | 울산대학교 | [@NaMinhyuk](https://github.com/NaMinhyuk) |
 |  | 샐리/조정미 | 경상대학교 | [@jung0115](https://github.com/jung0115) |
 | **Server** | 쥬파/정주현 | 울산대학교 | [@Jungjuhyeon](https://github.com/Jungjuhyeon) |
-| | 소조/조소현 | 경상대학교 | [@sohyun23](https://github.com/sohyun23) |
-| | 수박/조승현 | 부경대학교 | [@GmelaN](https://github.com/GmelaN) |
+| | 소조/조소현 | 부경대학교 | [@sohyun23](https://github.com/sohyun23) |
+| | 수박/조승현 | 경상대학교 | [@GmelaN](https://github.com/GmelaN) |
 
 ---
 
